@@ -1,0 +1,145 @@
+---
+# disclaimer page
+field: intro_screen
+question: Welcome to the interview!
+subquestion: |
+  This guided interview is intended to assist you to better understand your NDIS funding plan. Create a customised document to assist you to better understand your plan.
+  
+  The information provided is not endorsed by the NDIS and should only be used as a guide.
+  
+  We recommend contacting the Royal Society for the Blind for further information.
+
+  To get started, press **Continue**.
+under: |
+  **NOTE:** information is **current as at July 2020.**
+---
+# final display page
+mandatory: true
+need:
+  - intro_screen
+  - intro_NDIS
+field: summary_screen
+question: Summary
+subquestion: |
+  Below is a summary of the information you have requested.
+  
+  **information goes here however we want to present it**
+  
+  Support Category|(Would you like more information - yes or no)
+  ------------------|---------------------------------------------
+  **CORE SUPPORT**
+  Assistance with daily life| ${ core_assist_dailylife }
+  Transport|${ core_transport}
+  Consumables|${ core_consumables }
+  Assistance with social and community participation|${ core_assist_social }
+  **CAPITAL SUPPORT**
+  Home modifications|${ capital_home }
+  Assistive Technology|${ capital_AT }
+  **CAPACITY BUILDING**
+  Coordination of supports|${ capacity_coord_supports }
+  (OTHER CAPACTIY BUILDING HERE)
+  
+  **NOTE: can take buttons to EXIT & RESTART out
+  
+  We highly recommend downloading this information for easy reference.
+
+attachment:
+  name: Understanding your NDIS funding plan
+  filename: Understanding_your_NDIS_funding_plan
+  docx template file: Understanding_your_NDIS_funding_plan.docx
+  valid formats:
+  - pdf
+
+buttons:
+  - Finished: exit
+    url: https://google.com
+  - Restart: restart
+---
+field: intro_NDIS
+question: |
+  NDIS Support Purposes & Support Categories
+subquestion: |
+  There are **THREE** support purposes under the NDIS. Each purpose has a number of support categories:
+  
+  - **CORE SUPPORTS** - 
+    
+    **Support categories:** Assistance with daily life, Transport, Consumables, Assistance with social and community participation
+  
+  - **CAPITAL** - 
+    
+    **Support categories:** Home modifications and Assistive Technology
+  
+  - **CAPACITY BUILDING** - 
+  
+    **Support categories:** Coordination of supports, Improved living arrangements, Increased social and community participation, Job Assistance, Improved relations, health and wellbeing, learning, life choices and daily living.
+  
+  More information can be found in the NDIS Pricing Guide. Click [here](https://www.ndis.gov.au/providers/price-guides-and-pricing) for more information.
+
+  Please continue to learn more about each of the support categories.
+  
+buttons:
+  - Continue: continue
+---
+question: |
+  Core Support - Assistance with daily life
+subquestion: |
+  Short para about what this is...
+field: core_assist_dailylife
+buttons:
+  - YES
+  - NO
+---
+question: |
+  Core Support - Transport
+subquestion: |
+  short para about what Transport is...
+field: core_transport
+buttons:
+  - YES
+  - NO
+---
+question: |
+  Core Support - Consumables
+subquestion: |
+  Consumables info
+field: core_consumables
+buttons:
+  - YES
+  - NO
+---
+question: |
+  Core Support - Assistance with social and community participation
+subquestion: |
+  Info goes here
+field: core_assist_social
+buttons:
+  - YES
+  - NO
+---
+question: |
+  Capital Support - Home modifications
+subquestion: |
+  Would you like to learn more about any of the support categories available under Capital Support?
+field: capital_home
+buttons:
+  - YES
+  - NO
+---
+question: |
+  Capital Support - Assistive Technology
+subquestion: |
+  put info in here
+field: capital_AT
+buttons:
+  - YES
+  - NO
+---
+question: |
+  Capacity Building - Coordination of supports
+subquestion: |
+  put info here
+field: capacity_coord_supports
+buttons:
+  - YES
+  - NO
+---
